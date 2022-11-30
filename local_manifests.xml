@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <!-- Remotes -->
+        <remote name="pa-mojito" fetch="https://github.com/aospa-mojito" />
+
+        <!-- Trees -->
+        <project path="device/xiaomi/mojito" name="device_xiaomi_mojito" revision="topaz" remote="pa-mojito" />	
+        <project path="kernel/xiaomi/mojito" name="kernel_xiaomi_mojito" revision="topaz" remote="pa-mojito" />	  
+        <project path="vendor/xiaomi/mojito" name="vendor_xiaomi_mojito" revision="topaz" remote="pa-mojito" />
+
+        <!-- vendor/aospa -->
+        <remove-project name="android_vendor_aospa" />
+        <project path="vendor/aospa" name="vendor_aospa" remote="pa-mojito" revision="topaz" />
+
+</manifest>
